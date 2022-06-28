@@ -5,7 +5,7 @@ setInterval(function () {
   axios
     .get("https://MuffledLightgreenModulus.0be.repl.co/")
     .then(function (response) {
-      fs.writeFile("/index.html", response.data, function (err) {
+      fs.writeFile("./index.html", response.data, function (err) {
         if (err) {
           return console.log(err);
         }
